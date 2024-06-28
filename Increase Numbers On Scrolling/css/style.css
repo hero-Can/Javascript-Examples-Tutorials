@@ -1,0 +1,29 @@
+.container {
+    margin: 100px;
+}
+.container h1{
+    text-align: center;
+    font-size: 50px;
+}
+.sections {
+    background-color: aliceblue;
+    padding: 50px;
+}
+.sections .nums{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sections .nums .num{
+    background-color: cadetblue;
+    padding: 50px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    font-weight: bold;
+    border: 1px solid black;
+}

@@ -1,0 +1,38 @@
+body {
+    background-color: #d2eaff;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    width: 25%;
+    margin: 100px auto;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.card h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    
+}
+.card .np {
+    height: 50px;
+    border-radius: 6px;
+    border: 2px solid #48c2a5;
+    font-size: 30px;
+}
+.monselect {
+  border-radius: 6px;
+  border: 2px solid #48c2a5;
+  font-size: 18px;
+}
+.card .box {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+#montant {}
+
+#result {}

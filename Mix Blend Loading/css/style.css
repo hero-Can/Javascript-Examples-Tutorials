@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    background-color: black;
+}
+div {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ color: #fff;
+}
+div::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  animation: move 3s linear infinite ;
+  z-index: -1;
+}
+div span {
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 1;
+    mix-blend-mode: difference;
+}
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+    100% {
+        left: 0;
+    }
+}
