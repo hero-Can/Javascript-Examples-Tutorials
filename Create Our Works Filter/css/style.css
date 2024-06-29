@@ -16,6 +16,7 @@
     cursor: pointer;
     font-weight: bold;
 }
+.switcher div.active,
 .switcher div:hover {
     background-color: cadetblue;
     color: white;
@@ -30,7 +31,16 @@
 .gallery div{
     width: 200px;
     height: 200px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+}
+.gallery .web {
+  background-color: blue;
+}
+.gallery .gfx {
+  background-color: rgb(170, 255, 0);
+}
+.gallery .marketing {
+  background-color: #ff2b2b;
 }
 /* body {
     font-family: Arial, Helvetica, sans-serif;
