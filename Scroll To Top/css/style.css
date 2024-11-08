@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+}
+
+body { 
+    height: 5000px;
+    background-color: rgb(200, 230, 231);
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.up {
+    position: fixed;
+    background-color: #ed4b4b;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    right: -70px;
+    bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;  
+}
+.up.show {
+    right: 10px;
+}
+

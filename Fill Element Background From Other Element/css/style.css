@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 0 13px #ddd;
+    padding: 20px;
+    overflow: hidden;
+}
+.product .number {
+    background-color: cornflowerblue;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s;
+    /* box-shadow: 0 0 0 500px #ffd415; */
+}
+.product h3 {
+    margin: 15px 0;
+    font-size: 26px;
+    transition: 0.6s;
+}
+
+.product p {
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+    transition: 0.6s;
+}
+.product:hover .number {
+    box-shadow: 0 0 0 500px cornflowerblue;
+}
+.product:hover h3,
+.product:hover p {
+    color: white;
+}

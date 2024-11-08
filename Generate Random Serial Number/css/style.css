@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.serial {
+    background-color: #d8e7f4;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 50px auto 0;
+    border-radius: 5px;
+}
+
+.generate {
+    background: #ff613b;
+    width: fit-content;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px auto;
+    user-select: none;
+}
+.generate:hover {
+    background: #ffc9bb;
+    color: black;
+}

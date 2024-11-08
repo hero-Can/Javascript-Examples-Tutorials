@@ -1,0 +1,33 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Masquer le texte qui dépasse */
+    background: #f0f0f0; /* Couleur de fond */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.scroll-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Masquer le texte qui dépasse */
+    white-space: nowrap; /* Prévenir le retour à la ligne du texte */
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-left: 100%; /* Commence le texte à la droite de l'écran */
+    animation: scroll-left 20s linear infinite; /* Durée et répétition infinie de l'animation */
+    font-size: 20px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(-100%); /* Texte commence en dehors à droite */
+    }
+    
+    100% {
+        transform: translateX(0%); /* Texte se déplace jusqu'à sortir à gauche */
+    }
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    width: 500px;
+    background-color: rgb(215, 245, 250);
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 25px ;
+}
+
+form > div {
+   padding: 5px 0;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form label {
+    position: relative;
+    padding-left: 35px;
+}
+
+form label::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 2px solid rgb(29, 172, 255);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+form input[type="radio"]:checked + label::after {
+    content: "";
+    background-color: rgb(29, 172, 255);
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 7px;
+    top: 11px;
+}
+
+form input[type="radio"]:hover:not(:checked) + label::after {
+    content: "";
+    background-color: rgba(29, 172, 255, 0.285);
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 7px;
+    top: 11px;
+}
+
+form input[type="radio"]:checked + label {
+    color: rgb(29, 172, 255);
+}
